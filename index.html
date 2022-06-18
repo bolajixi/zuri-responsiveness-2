@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <title>CSS:Zuri Responsiveness 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+        html, body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        section {
+            height: auto;
+            text-align: center;
+        }
+        .section1 {
+            background-image: url("bg-hero-desktop.svg");
+            background-color: hsl(193, 100%, 96%);
+            padding: 50px;
+        }
+        .section3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3em;
+            background-color: hsl(192, 100%, 9%);
+            padding: 50px;  
+            color: white;
+        }
+        .inner-section1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+        }
+        .main-content > div {
+            padding: 50px;
+        }
+        h1, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card {
+            display: flex;
+            padding: 30px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid green;
+            margin: 60px;
+            border-radius: 20px;
+            box-shadow: 5px 5px rgba(58, 58, 58, 0.5);
+        }
+        .card > div {
+            align-content: center;
+            margin: 20px;
+        }
+        img {
+            height: 25em
+        }
+        button {
+            width: auto;
+            height: 50px;
+            border-radius: 30px;
+            color: white;
+            border: none;
+            padding: 10px 75px;
+            box-shadow: 2px 7px rgba(58, 58, 58, 0.5);
+            cursor: pointer;
+        }
+        .btn1 {
+            background-color: hsl(322, 100%, 66%);
+        }
+        .btn2 {
+            background-color: white;
+            color: hsl(208, 11%, 55%);
+            font-weight: bold;
+        }
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .info__icon {
+            width: 5%;
+            height: auto;
+        }
+        .info__icon2 {
+            width: 15%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <section class="inner-section1">
+            <img src="logo.svg" alt="" srcset="" style="width: 25%; height:auto;">
+            <button type="submit" class="btn2">Try it Free</button>
+        </section>
+        <div class="main-content">
+            <div>
+                <h1 style="font-size: 30px">Build The Community Your Fans WIll Love.</h1>
+                <p>Huddle re-imagine the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.
+                </p>
+                <button type="submit" class="btn1">Get Started For Free</button>
+            </div>
+            <div>
+                <img src="./illustration-mockups.svg" alt="flowing-conservation" style="height: 40em; padding: 30px;">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card" style="margin-top: 100px">
+            <div>
+                <h2>Grow together</h2>
+                <p>Generate meaningful discussion with your audience and build a strong, loyal community. 
+                    Think of the insightful conservations you miss out on with a feedback form.
+                </p>
+            </div>
+            <div>
+                <img src="./illustration-grow-together.svg" alt="flowing-conservation">
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="./illustration-flowing-conversation.svg" alt="flowing-conservation">
+            </div>
+            <div>
+                <h2>Flowing Conservations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do it online?
+                    Our threads have just-in-time loadinf for a more natural flow.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 100px;">
+            <div>
+                <h2>Your Users</h2>
+                <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                    once siigned in to your app, your userscan start chatting immediately.
+                </p>
+            </div>
+            <div>
+                <img src="./illustration-your-users.svg" alt="flowing-conservation">
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+       <div style="grid-column: 1/4;">
+            <img src="logo-white.svg" alt="" srcset="" style="width: 15%; height:auto;">
+       </div>
+       <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quos sit rem officia voluptatum deserunt, quia esse id maxime ea ipsam. Consequatur quo culpa maiores sed amet aut animi dolorum.</p>
+            <span>
+                <img class="info__icon" src="icon-phone.svg" alt="phone icon">
+                Phone:+1-543-123-4567
+            </span>
+            <span>
+                <img class="info__icon" src="icon-email.svg" alt="phone icon">
+                Email: example@huddle.com
+            </span>
+       </div>
+       <div class="nested">
+            <div>About Us</div>
+            <div>Career</div>
+            <div>What We Do</div>
+            <div>Blog</div>
+            <div>FAQ</div>
+            <div>Contact Us</div>
+       </div>
+       <div style="align-self: flex-start; width: 50%">
+           <img src="icon-facebook.svg" class="info__icon2" alt="facebook">
+           <img src="icon-twitter.svg" class="info__icon2" alt="twitter">
+           <img src="icon-instagram.svg" class="info__icon2" alt="instagram">
+        </div>
+        <div style="grid-column: 1/4;">
+            <p>Copyright 2018 Huddle All rights reserved</p>
+        </div>
+    </section>
+    
+</body>
+</html>
